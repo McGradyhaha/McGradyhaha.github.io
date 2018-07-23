@@ -15,7 +15,11 @@ $$
 Ber(x|\theta) = \theta^x(1-\theta)^{1-\theta}
 $$
 
-### Parameter Estimation of the bernoulli
+### Parameter Estimation of the bernoulliAAA\]
+
+
+
+
 
 
 
