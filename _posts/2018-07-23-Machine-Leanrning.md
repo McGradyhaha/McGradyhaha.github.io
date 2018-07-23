@@ -1,5 +1,5 @@
 ---
-Layout: posts
+layout: post
 Title: 'Bernoulli Distribution'
 Date: 2018-07-23
 Author: WhyK

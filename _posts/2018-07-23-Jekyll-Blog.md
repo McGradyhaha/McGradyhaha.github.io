@@ -1,15 +1,11 @@
-```
+---
+layout: post
 author: WhyK
 comments: true
 date: 2018-07-23 19:05:32+10:00
-layout: posts
-title: 'Construct your own blog by using jekyll in github'
-Categories:
-- Experience
-tags:
-- Blog
-- Github
-- Jekyll
+title: Construct your own blog by using jekyll in github
+---
 
-```
 
+
+HAHA

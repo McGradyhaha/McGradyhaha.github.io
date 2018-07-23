@@ -1,8 +1,7 @@
 PATH
   remote: .
   specs:
-    jekyll-theme-cayman-blog (0.0.6)
-      jekyll (~> 3.3)
+    jekyll-theme-prologue (0.3.2)
 
 GEM
   remote: https://rubygems.org/
@@ -63,7 +62,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  jekyll-theme-cayman-blog!
+  bundler (~> 1.12)
+  jekyll (~> 3.3)
+  jekyll-theme-prologue!
 
 BUNDLED WITH
    1.16.2
