@@ -9,4 +9,7 @@ It deletes all files and folders contained in the lampp directory.
 ```
 rm -f folderName
 ```
-<hr style="height:2px;border:none;border-top:2px dotted #185598;" />
+<hr style="filter: alpha(opacity=100,finishopacity=0,style=3);" />
+
+
+
