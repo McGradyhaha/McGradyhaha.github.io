@@ -4,7 +4,7 @@ author: WhyK
 comments: true
 date: 2018-08-06 18:05:32+10:00
 tags: [css, Methodology]
-title: Introduction of BEM(Blcok, Element, Modifier)
+title: Introduction of BEM (Blcok, Element, Modifier)
 ---
 
 <hr style="filter: alpha(opacity=100,finishopacity=0,style=3);" />
@@ -15,9 +15,9 @@ However, when it comes to larger, more complex projects, how you organize your c
 
 ### Blocks, Elments and Modifiers
 * Block: Standalone entity that is meaningful on its own.
-Examples: ` header`, ` containder`, ` menu`, ` checkbox`, ` input` 
-* Element: A part of a block that has no standalone meaning and is semantically tied to its block. Examples: ` menu item`, `list item`, `checkbox caption`, ` header title`
-* Modifier: A flag on a block or element. Use them to change appearance or behavior. Examples: ` disabled`, ` highlighted`, `checked`, `fixed`, `size big`, `color yellow`
+Examples: `header`, `containder`, `menu`, `checkbox`, `input` 
+* Element: A part of a block that has no standalone meaning and is semantically tied to its block. Examples: `menu item`, `list item`, `checkbox caption`, `header title`
+* Modifier: A flag on a block or element. Use them to change appearance or behavior. Examples: `disabled`, ` highlighted`, `checked`, `fixed`, `size big`, `color yellow`
 
 ### Example of BEM
 Let’s look how one particular element on a page can be implemented in BEM. We will take `button` from GitHub:
