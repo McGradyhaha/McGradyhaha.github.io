@@ -17,7 +17,7 @@ However, when it comes to larger, more complex projects, how you organize your c
 * Block: Standalone entity that is meaningful on its own.
 Examples: `header`, `containder`, `menu`, `checkbox`, `input` 
 * Element: A part of a block that has no standalone meaning and is semantically tied to its block. Examples: `menu item`, `list item`, `checkbox caption`, `header title`
-* Modifier: A flag on a block or element. Use them to change appearance or behavior. Examples: `disabled`, ` highlighted`, `checked`, `fixed`, `size big`, `color yellow`
+* Modifier: A flag on a block or element. Use them to change appearance or behavior. Examples: `disabled`, `highlighted`, `checked`, `fixed`, `size big`, `color yellow`
 
 ### Example of BEM
 Let’s look how one particular element on a page can be implemented in BEM. We will take `button` from GitHub:
@@ -63,9 +63,12 @@ We can have a normal button for usual cases, and two more states for different o
 ```html
 <div class="block">...</div>
 ```
+
 * CSS:
 a. Use class name selector only 
 b. No tag name or ids c. No dependency on other blocks/elements on a page
+
+
 ```css
 .block { color: #042; }
 ```
@@ -75,12 +78,14 @@ Parts of a block and have no standalone meaning. Any element is semantically tie
 
 * Naming: Element names may consist of Latin letters, digits, dashes and underscores. CSS class is formed as block name plus two underscores plus element name: `.block__elem`
 * HTML: Any DOM node within a block can be an element. Within a given block, all elements are semantically equal.
+
 ```html
 <div class="block">
 	  ...
 	  <span class="block__elem"></span>
 	</div>
 ```
+
 * CSS:
 a. Use class name selector only 
 b. No tag name or ids 
@@ -94,11 +99,13 @@ c. No dependency on other blocks/elements on a page
 .block .block__elem { color: #042; }
 	div.block__elem { color: #042; }
 ```
+
 #### 3. Modifier
 Flags on blocks or elements. Use them to change appearance, behavior or state.
 
 * Naming: Modifier names may consist of Latin letters, digits, dashes and underscores. CSS class is formed as block’s or element’s name plus two dashes: `.block--mod` or `.block__elem--mod` and `.block--color-black` with `.block--color-red`. Spaces in complicated modifiers are replaced by dash.
 * HTML: Modifier is an extra class name which you add to a block/element DOM node. Add modifier classes only to blocks/elements they modify, and keep the original class:
+
 ```html
 <!-- Good Example -->
 <div class="block block--mod">...</div>
@@ -107,18 +114,22 @@ Flags on blocks or elements. Use them to change appearance, behavior or state.
 <!-- Bad Example -->
 <div class="block--mod">...</div>
 ```
+
 * CSS:
 a. Use modifier class name as selector b. To alter elements based on a block-level modifier
 c. Element modifier
+
 ```css
 .block--hidden { }
 .block--mod .block__elem { }
 .block__elem--mod { }
 ```
+
 ### Example of BEM
 Suppose you have block form with modifiers `theme: "xmas"` and `simple: true` and with elements `input` and `submit`, and element submit with its own modifier `disabled: true` for not submitting form while it is not filled:
 
 #### 1. HTML
+
 ```html
 <form class="form form--theme-xmas form--simple">
   <input class="form__input" type="text" />
@@ -127,7 +138,9 @@ Suppose you have block form with modifiers `theme: "xmas"` and `simple: true` an
     type="submit" />
 </form>
 ```
+
 #### 2. CSS
+
 ```css
 .form { }
 .form--theme-xmas { }
