@@ -8,5 +8,12 @@ title: Exact Inference in graphical model
 ```
 
 ### Exact Inference In Graphical Models
+#### Outline
 
-* Item 1
+* [Statistical Independence]()
+* [Probabilistic Graphical Models]()
+	1. Directed and undirected graphical models
+	2. Main tasks in graphical models
+* Conditional Independence 
+
+
