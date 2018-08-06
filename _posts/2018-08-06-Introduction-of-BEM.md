@@ -8,18 +8,18 @@ title: Introduction of BEM (Blcok, Element, Modifier)
 ---
 
 <hr style="filter: alpha(opacity=100,finishopacity=0,style=3);" />
-### Introduction
+### **Introduction**
 On smaller brochure sites, how you organize your styles isn’t usually a big concern. You get in there, write some CSS, or maybe even some SASS. You compile it all into a single stylesheet with SASS’s production settings, and then you aggregate it to get all the stylesheets from modules into a nice tidy package.
 
 However, when it comes to larger, more complex projects, how you organize your code is the key to efficiency in at least these three ways: it affects how long it takes you to write code, how much of that code you’ll have to write and how much loading your browser will have to do. This becomes especially important when you’re working with teams of themers, and when high performance is essential.
 
-### Blocks, Elments and Modifiers
-* Block: Standalone entity that is meaningful on its own.
+### **Blocks, Elments and Modifiers**
+* **Block**: Standalone entity that is meaningful on its own.
 Examples: `header`, `containder`, `menu`, `checkbox`, `input` 
-* Element: A part of a block that has no standalone meaning and is semantically tied to its block. Examples: `menu item`, `list item`, `checkbox caption`, `header title`
-* Modifier: A flag on a block or element. Use them to change appearance or behavior. Examples: `disabled`, `highlighted`, `checked`, `fixed`, `size big`, `color yellow`
+* **Element**: A part of a block that has no standalone meaning and is semantically tied to its block. Examples: `menu item`, `list item`, `checkbox caption`, `header title`
+* **Modifier**: A flag on a block or element. Use them to change appearance or behavior. Examples: `disabled`, `highlighted`, `checked`, `fixed`, `size big`, `color yellow`
 
-### Example of BEM
+### **Example of BEM**
 Let’s look how one particular element on a page can be implemented in BEM. We will take `button` from GitHub:
 
 ![example](http://getbem.com/assets/github_buttons.jpg)
@@ -56,10 +56,11 @@ We can have a normal button for usual cases, and two more states for different o
 	color: #900;
 }
 ```
-### Naming of BEM
-#### 1. Blcok
+### **Naming of BEM**
+#### **1. Blcok**
 * Naming: Block names may consist of Latin letters, digits, and dashes. To form a CSS class, add a short prefix for namespacing: `.block`
 * HTML: Any DOM node can be a block if it accepts a class name.
+
 ```html
 <div class="block">...</div>
 ```
@@ -73,7 +74,7 @@ b. No tag name or ids c. No dependency on other blocks/elements on a page
 .block { color: #042; }
 ```
 
-#### 2. Element
+#### **2. Element**
 Parts of a block and have no standalone meaning. Any element is semantically tied to its block.
 
 * Naming: Element names may consist of Latin letters, digits, dashes and underscores. CSS class is formed as block name plus two underscores plus element name: `.block__elem`
@@ -100,7 +101,7 @@ c. No dependency on other blocks/elements on a page
 	div.block__elem { color: #042; }
 ```
 
-#### 3. Modifier
+#### **3. Modifier**
 Flags on blocks or elements. Use them to change appearance, behavior or state.
 
 * Naming: Modifier names may consist of Latin letters, digits, dashes and underscores. CSS class is formed as block’s or element’s name plus two dashes: `.block--mod` or `.block__elem--mod` and `.block--color-black` with `.block--color-red`. Spaces in complicated modifiers are replaced by dash.
