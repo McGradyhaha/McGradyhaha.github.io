@@ -5,7 +5,7 @@ keyword: 'WhyK, WhyK的个人博客, AI, 机器学习, 深度学习, 算法'
 url: '' # your host
 
 # if you don't need baseurl, you should leave this value blank.
-baseurl: 'https://mcgradyhaha.github.io/'
+baseurl: ''
 
 # Navigation links
 nav:
